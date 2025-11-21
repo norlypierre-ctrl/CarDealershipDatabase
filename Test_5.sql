@@ -2,7 +2,7 @@ USE `Car Dealership`;
  
  -- 5.
  
- SELECT  DISTINCT *
+ SELECT  DISTINCT d.*
  FROM Dealerships d
  JOIN Inventory i ON d.Dealership_ID = i.Dealership_ID
  JOIN Vehicles v ON v.VIN = v.VIN
