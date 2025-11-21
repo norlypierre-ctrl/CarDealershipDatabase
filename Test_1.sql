@@ -1,6 +1,6 @@
- USE `car dealership`;
+ USE `Car Dealership`;
  
  -- 1.
  
  SELECT *
- FROM dealerships;
+ FROM Dealerships;
