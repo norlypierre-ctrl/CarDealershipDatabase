@@ -1,9 +1,15 @@
 -- Step 1. 
  
- DROP DATABASE IF EXISTS `car dealership`;
- CREATE DATABASE `car dealership`;
+ DROP DATABASE IF EXISTS `Car Dealership`;
+ CREATE DATABASE `Car Dealership`;
  
- USE `car dealership`;
+ USE `Car Dealership`;
+
+DROP TABLE IF EXISTS Dealerships;
+DROP TABLE IF EXISTS Inventory;
+DROP TABLE IF EXISTS Lease_contracts;
+DROP TABLE IF EXISTS Sales_Contracts;
+DROP TABLE IF EXISTS Vehicles;
 
 -- Step 2. 
 
@@ -51,7 +57,7 @@ CREATE TABLE lease_contracts (
 	FOREIGN KEY  (VIN) REFERENCES vehicles(VIN)
 );
 
--- 3.
+-- Step 3.
 
 -- DEALERSHIPS: 4
 
@@ -110,4 +116,6 @@ INSERT INTO lease_contracts (VIN, lease_start, lease_end, monthly_payment) VALUE
 ('1ABCDEF1234567890', '2024-01-01', '2026-01-01', 350.00), -- Camry
 ('4BMWX52021ZABCDEF','2024-03-01', '2027-03-01', 780.00), -- BMW X5
 ('3TESLAMODELX2022Z','2024-06-01', '2028-06-01', 950.00); -- Model X
+
+
 
